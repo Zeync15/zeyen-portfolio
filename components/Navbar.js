@@ -1,13 +1,37 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import navLogo from "../public/assets/zeyen-logo-larger-outline.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [showLogo, setShowLogo] = useState(true);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/csv" ||
+      router.asPath === "/context" ||
+      router.asPath === "/campsite" ||
+      router.asPath === "/unicloth"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+      setShowLogo(false);
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+      setShowLogo(true);
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -25,40 +49,50 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100]"}>
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
-          <Image
-            src="/assets/zeyen-logo-larger-outline.png"
-            alt="Ze Yen"
-            width="200"
-            height="200"
-            className="cursor-pointer"
-          />
-        </Link>
         <div>
-          <ul className="hidden md:flex">
+          <div className={ showLogo ? "": "hidden"}>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <a>
+                <Image
+                  src={navLogo}
+                  alt="Ze Yen"
+                  width="200"
+                  height="200"
+                  className="cursor-pointer"
+                />
+              </a>
             </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-            </Link>
-            <Link href="/#experiences">
-              <li className="ml-10 text-sm uppercase hover:border-b">Experiences</li>
-            </Link>
-            <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
-            </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
-            </Link>
+          </div>
+        </div>
+        <div>
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#about">About</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#experiences">Experiences</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#projects">Projects</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#skills">Skills</Link>
+            </li>
           </ul>
 
-          <div onClick={handleNav} className="md:hidden">
+          <div style={{ color: `${linkColor}` }} onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -77,7 +111,7 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between -mt-12">
               <Link href="/">
                 <Image
-                  src="/assets/zeyen-logo-larger-outline.png"
+                  src={navLogo}
                   alt="Ze Yen"
                   width="150"
                   height="150"
@@ -99,19 +133,29 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={()=> setNav(false)} className="py-4 text-sm">Home</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Home
+                </li>
               </Link>
               <Link href="/#about">
-                <li onClick={()=> setNav(false)} className="py-4 text-sm">About</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  About
+                </li>
               </Link>
               <Link href="/#experiences">
-                <li onClick={()=> setNav(false)} className="py-4 text-sm">Experiences</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Experiences
+                </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={()=> setNav(false)} className="py-4 text-sm">Projects</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Projects
+                </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={()=> setNav(false)} className="py-4 text-sm">Skills</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Skills
+                </li>
               </Link>
             </ul>
           </div>
