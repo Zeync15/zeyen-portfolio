@@ -19,8 +19,7 @@ const Main = () => {
 
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I'm a front-end web developer using Nextjs and Reactjs to design and build user
-            interfaces. Currently, I'm focusing on building CSV Importer and admin system for my
-            current company.
+            interfaces. Currently, I'm focusing on building CSV Importer and admin system for the company I'm working with.
           </p>
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

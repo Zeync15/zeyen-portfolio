@@ -4,7 +4,7 @@ import ExperienceItem from "./ExperienceItem";
 const Experiences = () => {
   return (
     <div>
-      <div id="experiences" className="w-full md:h-screen p-2 flex items-center py-16">
+      <div id="experiences" className="w-full h-full p-2 flex items-center py-16">
         <div className="max-w-[1240px] m-auto ">
           <div>
             <p className="uppercase text-xl tracking-widest text-[#5651e5]">Working Experience</p>

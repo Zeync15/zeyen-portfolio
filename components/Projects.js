@@ -7,7 +7,7 @@ import uniclothImg from "../public/assets/projects/unicloth.jpg";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full">
+    <div id="projects" className="w-full " >
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">Projects</p>
 
@@ -31,14 +31,14 @@ const Projects = () => {
           <ProjectItem
             title="Campsite (FYP)"
             backgroundImg={campsiteImg}
-            projectUrl="https://campsite-7994b.firebaseapp.com/"
-            tech="React, Firebase, Google Maps Api"
+            projectUrl="/campsite"
+            tech="React, Firebase, Google Maps API"
           />
 
           <ProjectItem
             title="UniCloth"
             backgroundImg={uniclothImg}
-            projectUrl="https://serene-headland-89920.herokuapp.com/"
+            projectUrl="/unicloth"
             tech="Nodejs, MongoDB, Heroku"
           />
         </div>
