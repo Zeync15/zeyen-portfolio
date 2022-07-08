@@ -1,18 +1,24 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import csvImg from "../public/assets/projects/csv-importer.jpg";
+import campsiteImg from "../public/assets/projects/campsite.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const Csv = () => {
+const Campsite = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
-        <Image className="absolute z-1" layout="fill" objectFit="cover" src={csvImg} alt="csv" />
+        <Image
+          className="absolute z-1"
+          layout="fill"
+          objectFit="cover"
+          src={campsiteImg}
+          alt="csv"
+        />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">CSV Importer</h2>
-          <h3>Nextjs / Papa Parse / React Table</h3>
+          <h2 className="py-2">Campsite</h2>
+          <h3>React / Firebase / Google Maps API</h3>
         </div>
       </div>
 
@@ -21,19 +27,19 @@ const Csv = () => {
           <p>Project</p>
           <h2 className="py-2">Overview</h2>
           <p>
-            This CSV Importer app (mock) is built using Nextjs, Papa Parse and React Table. It was
-            one of the app I built during my front-end software developer job in OmniGeo Solutions.
-            Users are able to upload their CSV files to the app with different value. The app used a
-            CSV parser call - Papa Parse to get all the CSV values, and render it to a table with
-            React Table. The users are able to edit their CSV files before submiting to our server.
-            I also integrated NextAuth, a Nextjs authentication solution to make sure user login
-            before uploading their CSV files.
+            I created this Campsite app for my final year project back in 2021. This app aims to
+            create an app that focused on letting the users share campsites information and organise
+            campsites events. There are some similar campsite applications on the internet but in my
+            opinion, lacking some functions users need. So my objectives were to create an
+            easy-to-use web app, design a clean user interface, and implement important functions on
+            the web app. For the front-end, I used React and Semantic Ui to create the user
+            interface. For the back-end, I used Firebase to store data, authentication and hosting.
           </p>
 
           <a href="https://campsite-7994b.firebaseapp.com" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href="https://github.com/Zeync15/next-csv-importer" target="_blank">
+          <a href="https://github.com/Zeync15/campsite" target="_blank">
             <button className="px-8 py-2 mt-4">Code</button>
           </a>
         </div>
@@ -44,31 +50,31 @@ const Csv = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Nextjs
+                React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Papa Parse
+                Firebase
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React Table
+                Google Maps API
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Bootstrap
+                Redux
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React Stepper
+                React Router Dom
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Next Auth
+                Formik
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Next Router
+                Semantic Ui
               </p>
             </div>
           </div>
@@ -80,5 +86,4 @@ const Csv = () => {
     </div>
   );
 };
-
-export default Csv;
+export default Campsite;

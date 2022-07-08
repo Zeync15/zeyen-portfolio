@@ -1,18 +1,24 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import csvImg from "../public/assets/projects/csv-importer.jpg";
+import uniclothImg from "../public/assets/projects/unicloth.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const Csv = () => {
+const Unicloth = () => {
   return (
     <div className="w-full">
-      <div className="w-screen h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
-        <Image className="absolute z-1" layout="fill" objectFit="cover" src={csvImg} alt="csv" />
+      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10" />
+        <Image
+          className="absolute z-1"
+          layout="fill"
+          objectFit="cover"
+          src={uniclothImg}
+          alt="csv"
+        />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">CSV Importer</h2>
-          <h3>Nextjs / Papa Parse / React Table</h3>
+          <h2 className="py-2">UniCloth</h2>
+          <h3>Nodejs / MongoDB / Heroku</h3>
         </div>
       </div>
 
@@ -21,19 +27,18 @@ const Csv = () => {
           <p>Project</p>
           <h2 className="py-2">Overview</h2>
           <p>
-            This CSV Importer app (mock) is built using Nextjs, Papa Parse and React Table. It was
-            one of the app I built during my front-end software developer job in OmniGeo Solutions.
-            Users are able to upload their CSV files to the app with different value. The app used a
-            CSV parser call - Papa Parse to get all the CSV values, and render it to a table with
-            React Table. The users are able to edit their CSV files before submiting to our server.
-            I also integrated NextAuth, a Nextjs authentication solution to make sure user login
-            before uploading their CSV files.
+            This mock Uniqlo app was my first attempt to create a web application back in 2020. The
+            app was a rework from a web development assignment I got back in university. That
+            assignment got me interested in web development and I spent a lot of time learning how
+            to become a web developer. This web app is just some basic static website, with packages
+            that handle email and password login. All user data were encrypted using bcrypt, stored
+            in MongoDB and hosted on Heroku.
           </p>
 
-          <a href="https://campsite-7994b.firebaseapp.com" target="_blank">
+          <a href="https://serene-headland-89920.herokuapp.com" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href="https://github.com/Zeync15/next-csv-importer" target="_blank">
+          <a href="https://github.com/Zeync15/UniCloth" target="_blank">
             <button className="px-8 py-2 mt-4">Code</button>
           </a>
         </div>
@@ -44,31 +49,27 @@ const Csv = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Nextjs
+                JavaScript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Papa Parse
+                NodeJs
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React Table
+                bcrypt
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Bootstrap
+                MongoDB
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React Stepper
+                Express
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Next Auth
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Next Router
+                Heroku
               </p>
             </div>
           </div>
@@ -80,5 +81,4 @@ const Csv = () => {
     </div>
   );
 };
-
-export default Csv;
+export default Unicloth;
