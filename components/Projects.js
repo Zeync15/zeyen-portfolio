@@ -1,12 +1,13 @@
 import ProjectItem from "./ProjectItem";
 import propertyImg from "../public/assets/projects/property.jpg";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
+import csvImg from "../public/assets/projects/csv-importer.jpg";
 import campsiteImg from "../public/assets/projects/campsite.jpg";
 import uniclothImg from "../public/assets/projects/unicloth.jpg";
 
 const Projects = () => {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">Projects</p>
 
@@ -15,9 +16,9 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="CSV Importer"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
-            tech="Nextjs, Next Auth, react-table"
+            backgroundImg={csvImg}
+            projectUrl="/csv"
+            tech="Nextjs, Papa Parse, React Table"
           />
 
           <ProjectItem
@@ -31,7 +32,7 @@ const Projects = () => {
             title="Campsite (FYP)"
             backgroundImg={campsiteImg}
             projectUrl="https://campsite-7994b.firebaseapp.com/"
-            tech="React, Firebase, Google Map"
+            tech="React, Firebase, Google Maps Api"
           />
 
           <ProjectItem
