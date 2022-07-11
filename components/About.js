@@ -10,13 +10,13 @@ const About = () => {
           <h2 className="py-4">Who I Am</h2>
 
           <p className="py-2 text-gray-600">
-            /// I am a web developer that happens to major in networking and security.
+            &#47;&#47; I am a web developer that happens to major in networking and security.
           </p>
 
           <p className="py-2 text-gray-600">
             I found my interest in web development when I was studying Web Fundamental 101 at my
             University. I began to self-learn web development through online courses so that I could
-            compete with other students that have a Software Engineering background.{" "}
+            compete with other students that have a Software Engineering background.
           </p>
 
           <p className="py-2 text-gray-600">
