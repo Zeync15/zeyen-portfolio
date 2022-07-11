@@ -59,7 +59,7 @@ const ExperienceItem = () => {
               Microsoft Common Data model
             </p>
             <p className="py-2">
-              Implement the Human Resource system into company's Automotive Customer Relationship
+              Implement the Human Resource system into company&apos;s Automotive Customer Relationship
               Management application
             </p>
             <p className="py-2">Design more than 20 HR entities with Angular</p>
@@ -91,7 +91,7 @@ const ExperienceItem = () => {
             <p className="py-2">Assist in launching 3 new Shopify stores</p>
             <p className="py-2">Update 6 existing stores in Shopify</p>
             <p className="py-2">Assist in creating new products and sitemaps for new stores</p>
-            <p className="py-2">Design Shopify store according to client's needs</p>
+            <p className="py-2">Design Shopify store according to client&apos;s needs</p>
             <p className="py-2">Create store function for clients using jQuery</p>
             <p className="py-2">Assist in creating CSS templates for the company</p>
           </div>
@@ -117,7 +117,7 @@ const ExperienceItem = () => {
           </div>
 
           <div>
-            <p className="py-2">Create webpages with HTML and CSS based on client's needs</p>
+            <p className="py-2">Create webpages with HTML and CSS based on client&apos;s needs</p>
             <p className="py-2">Check for bugs in the development and production environment</p>
             <p className="py-2">Translate website content to other languages with Angular i18n</p>
             <p className="py-2">Provide ideas in creating UI for application</p>

@@ -37,8 +37,9 @@ const ContextMapping = () => {
             way I created this app was by manipulating multiple arrays and using the useRef react
             hooks so that I can call the Xarrows function multiple time. This app is useful when
             users upload values that are different from what we expected, and I can prompt the user
-            to match their value with our server's value. Then, the back-end can add some function
-            to overwrite the user's value. This app is deployed to vercel after finishing building.
+            to match their value with our server&apos;s value. Then, the back-end can add some
+            function to overwrite the user&apos;s value. This app is deployed to vercel after
+            finishing building.
           </p>
 
           <a

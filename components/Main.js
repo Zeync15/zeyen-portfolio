@@ -11,19 +11,19 @@ const Main = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
-            LET'S BUILD SOMETHING TOGETHER
+            LET&apos;S BUILD SOMETHING TOGETHER
           </p>
 
           <h1 className="py-4 text-gray-700">
-            Hi, I'm <span className="text-[#5651e5]">Chai Ze Yen</span>
+            Hi, I&apos;m <span className="text-[#5651e5]">Chai Ze Yen</span>
           </h1>
 
           <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
 
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I'm a front-end web developer using Nextjs and Reactjs to design and build user
-            interfaces. Currently, I'm focusing on building CSV Importer and admin system for the
-            company I'm working with.
+            I&apos;m a front-end web developer using Nextjs and Reactjs to design and build user
+            interfaces. Currently, I&apos;m focusing on building CSV Importer and admin system for
+            the company I&apos;m working with.
           </p>
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
