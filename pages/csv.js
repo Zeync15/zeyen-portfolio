@@ -22,18 +22,27 @@ const Csv = () => {
           <h2 className="py-2">Overview</h2>
           <p>
             This CSV Importer app (mock) is built using Nextjs, Papa Parse and React Table. It was
-            one of the app I built during my front-end software developer job in OmniGeo Solutions.
-            Users are able to upload their CSV files to the app with different value. The app used a
-            CSV parser call - Papa Parse to get all the CSV values, and render it to a table with
-            React Table. The users are able to edit their CSV files before submiting to our server.
-            I also integrated NextAuth, a Nextjs authentication solution to make sure user login
-            before uploading their CSV files.
+            one of the apps I built during my front-end software developer job at OmniGeo Solutions.
+            Users can upload their CSV files to the app with different values. The app used a CSV
+            parser called - Papa Parse to get all the CSV values, and render them to a table with
+            React Table. The users can edit their CSV files before submitting them to our server. I
+            also integrated NextAuth, a Nextjs authentication solution to make sure users log in
+            before uploading their CSV files. This app is deployed to vercel after finishing
+            building.
           </p>
 
-          <a href="https://campsite-7994b.firebaseapp.com" target="_blank">
+          <a
+            href="https://next-csv-importer-zeync15.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href="https://github.com/Zeync15/next-csv-importer" target="_blank">
+          <a
+            href="https://github.com/Zeync15/next-csv-importer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="px-8 py-2 mt-4">Code</button>
           </a>
         </div>
@@ -68,7 +77,7 @@ const Csv = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Next Router
+                Vercel
               </p>
             </div>
           </div>

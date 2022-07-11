@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import campsiteImg from "../public/assets/projects/campsite.jpg";
+import contextMappingImage from "../public/assets/projects/context-mapping.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const Campsite = () => {
+// https://next-context-mapping-zeync15.vercel.app/
+
+const ContextMapping = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,12 +15,12 @@ const Campsite = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={campsiteImg}
+          src={contextMappingImage}
           alt="csv"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Campsite</h2>
-          <h3>React / Firebase / Google Maps API</h3>
+          <h2 className="py-2">Context Mapping</h2>
+          <h3>Nextjs / Xarrows / useRef</h3>
         </div>
       </div>
 
@@ -27,23 +29,30 @@ const Campsite = () => {
           <p>Project</p>
           <h2 className="py-2">Overview</h2>
           <p>
-            I created this Campsite app for my final year project back in 2021. This app aims to
-            create an app that focused on letting the users share campsites information and organise
-            campsites events. There are some similar campsite applications on the internet but in my
-            opinion, lacking some functions users need. So my objectives were to create an
-            easy-to-use web app, design a clean user interface, and implement important functions on
-            the web app. For the front-end, I used React and Semantic Ui to create the user
-            interface. For the back-end, I used Firebase to store data, authentication and hosting.
+            This Context Mapping app (mock) is built using Nextjs and Xarrows. It was one of the
+            apps I built during my front-end software developer job at OmniGeo Solutions. This demo
+            is an oversimplified version of the context mapping app I have created. I created this
+            interface with 2 columns of sample values and used Xarrows to link between them. When
+            any value from column A and column B are linked, both of their value will be shown. The
+            way I created this app was by manipulating multiple arrays and using the useRef react
+            hooks so that I can call the Xarrows function multiple time. This app is useful when
+            users upload values that are different from what we expected, and I can prompt the user
+            to match their value with our server's value. Then, the back-end can add some function
+            to overwrite the user's value. This app is deployed to vercel after finishing building.
           </p>
 
           <a
-            href="https://campsite-7994b.firebaseapp.com"
+            href="https://next-context-mapping-zeync15.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href="https://github.com/Zeync15/campsite" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Zeync15/next-context-mapping"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="px-8 py-2 mt-4">Code</button>
           </a>
         </div>
@@ -54,31 +63,23 @@ const Campsite = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React
+                Nextjs
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Firebase
+                React Xarrows
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Google Maps API
+                useRef
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Redux
+                Array
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React Router Dom
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Formik
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Semantic Ui
+                Vercel
               </p>
             </div>
           </div>
@@ -90,4 +91,5 @@ const Campsite = () => {
     </div>
   );
 };
-export default Campsite;
+
+export default ContextMapping;

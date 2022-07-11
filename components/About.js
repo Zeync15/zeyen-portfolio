@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
@@ -36,7 +38,7 @@ const About = () => {
           </p>
 
           <p className="py-2 text-gray-600 underline cursor-pointer">
-            Check out some of my latest projects.
+            <Link href="/#projects">Check out some of my latest projects.</Link>
           </p>
         </div>
 
