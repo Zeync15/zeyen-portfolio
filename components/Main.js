@@ -18,12 +18,12 @@ const Main = () => {
             Hi, I&apos;m <span className="text-[#5651e5]">Chai Ze Yen</span>
           </h1>
 
-          <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
+          <h1 className="py-2 text-gray-700">A Front-end Web Developer</h1>
 
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I&apos;m a front-end web developer using Nextjs and Reactjs to design and build user
-            interfaces. Currently, I&apos;m focusing on building CSV Importer and admin system for
-            the company I&apos;m working with.
+          <p className="py-4 text-gray-600 max-w-[60%] m-auto">
+            I&apos;m a front-end web developer using Nextjs and Angular to
+            design and build web applications. Currently, I&apos;m developing
+            the Work Place Reservation System for EDAG.
           </p>
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
@@ -36,7 +36,7 @@ const Main = () => {
 
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <a
-                href="https://www.linkedin.com/in/chai-ze-yen-0bb4bb1a6"
+                href="https://www.linkedin.com/in/chai-ze-yen/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -45,7 +45,11 @@ const Main = () => {
             </div>
 
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <a href="https://github.com/Zeync15" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/Zeync15"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
             </div>
