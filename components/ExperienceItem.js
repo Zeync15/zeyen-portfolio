@@ -21,6 +21,7 @@ const ExperienceItem = () => {
           </div>
 
           <div>
+            <h4 className="py-2">Project: Work Place Reservation System</h4>
             <p className="py-2">
               Utilized Angular components, services, modules, and routing to
               create a modular and maintainable codebase
