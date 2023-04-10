@@ -3,10 +3,12 @@ import React from "react";
 const ExperienceItem = () => {
   return (
     <>
-      {/* EDAG Group */}
+      {/* EDAG Holding */}
       <div className="lg:grid grid-cols-5 gap-12 mt-10">
         <div className="col-span-2 mb-10 mb-lg-0">
-          <h2 className="font-normal hidden lg:block">EDAG Group</h2>
+          <h2 className="font-normal hidden lg:block">
+            EDAG Holding Sdn. Bhd.
+          </h2>
           <p className="italic mt-3 hidden lg:block">November 2022 - present</p>
         </div>
 
@@ -14,7 +16,9 @@ const ExperienceItem = () => {
           <h2 className="pb-2 mb-1">Front-end Software Developer</h2>
 
           <div>
-            <h3 className="text-2xl font-normal lg:hidden">EDAG Group</h3>
+            <h3 className="text-2xl font-normal lg:hidden">
+              EDAG Holding Sdn. Bhd.
+            </h3>
             <p className="italic mt-3 mb-4 lg:hidden">
               November 2022 - present
             </p>
@@ -27,27 +31,23 @@ const ExperienceItem = () => {
               create a modular and maintainable codebase
             </p>
             <p className="py-2">
-              Experienced in resolving complex merge conflicts, successfully
-              resolved 82 commits from 7 different branches in a recent project
-              by utilizing my Git knowledge
+              Experienced in resolving complex merge conflicts, resolved 82
+              merge conflicts across 7 branches using Git knowledge
             </p>
             <p className="py-2">
-              Successfully made pull requests incorporating 7 story branches,
-              contributing to seamless code integration and improved
+              Merged 7 story branches with pull requests, improving
               collaboration with the development team
             </p>
             <p className="py-2">
               Implemented design changes suggested by clients and team members
             </p>
             <p className="py-2">
-              Wrote unit tests using testing tools such as Jest with at least
-              80% of code coverage to ensure the quality of the code and to
-              catch bugs early in the development process
+              Wrote Jest unit tests with 80% code coverage to catch bugs early
+              and ensure code quality during the development process
             </p>
             <p className="py-2">
-              Collaborated with the back-end team to integrate the front-end
-              with REST APIs and to handle data retrieval and manipulation,
-              resulting in improved data processing speed
+              Collaborated with the back-end team to integrate REST APIs for
+              faster data processing.
             </p>
             <p className="py-2">
               Shared knowledge with colleagues from Malaysia and Germany on
@@ -82,64 +82,34 @@ const ExperienceItem = () => {
 
           <div>
             <p className="py-2">
-              Build web applications such as forms and admin system with Next.js
-              and Bootstrap
+              Developed web applications and admin systems using Next.js and
+              Bootstrap, implementing responsive designs that optimized user
+              experience across various devices
             </p>
             <p className="py-2">
-              Create functions for uploading, processing and error handling of
-              CSV Files
+              Created custom functions for uploading, processing, and error
+              handling of CSV files
             </p>
             <p className="py-2">
-              Implement user authentication like OAuth with Next Auth
+              Implement user authentication using OAuth with Next Auth
             </p>
             <p className="py-2">
-              Create user interface with data retrieved from the server
-            </p>
-            <p className="py-2">Submit data to the server with API</p>
-            <p className="py-2">
-              Link two sets of data dynamically with Xarrow to create context
-              between data
+              Create user interfaces with data retrieved from the server
             </p>
             <p className="py-2">
-              Using many npm packages to integrate different functionalities to
-              the web app
+              Submitted data to the server with API, utilizing RESTful
+              architecture to ensure data integrity and reliability
+            </p>
+            <p className="py-2">
+              Linking two sets of data dynamically with an npm package such as
+              Xarrow to create context between data, and enable seamless data
+              visualization
             </p>
           </div>
         </div>
       </div>
 
-      {/* B2All Solution */}
-      {/* <div className="lg:grid grid-cols-5 gap-12  mt-10">
-        <div className="col-span-2 mb-10 mb-lg-0">
-          <h2 className="font-normal hidden lg:block">B2All Solution Sdn. Bhd.</h2>
-          <p className="italic mt-3 hidden lg:block">September 2021 - December 2021</p>
-        </div>
-
-        <div className="col-span-3 mb-10 mb-lg-0">
-          <h2 className="pb-2 mb-1">Software Engineer</h2>
-
-          <div>
-            <h3 className="text-2xl font-normal lg:hidden">B2All Solution Sdn. Bhd.</h3>
-            <p className="italic mt-3 mb-4 lg:hidden">September 2021 - December 2021</p>
-          </div>
-
-          <div>
-            <p className="py-2">
-              Create Payroll and HRM Data Model with entity relationship diagram referencing the
-              Microsoft Common Data model
-            </p>
-            <p className="py-2">
-              Implement the Human Resource system into company&apos;s Automotive Customer Relationship
-              Management application
-            </p>
-            <p className="py-2">Design more than 20 HR entities with Angular</p>
-            <p className="py-2">Write migration script for moving 7 data collection</p>
-            <p className="py-2">Migrate more than 10,000 data with Firebase cloud functions</p>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Jumpstart Commerce Sdn Bhd */}
+     {/* Jumpstart Commerce Sdn Bhd */}
       <div className="lg:grid grid-cols-5 gap-12  mt-10">
         <div className="col-span-2 mb-10 mb-lg-0">
           <h2 className="font-normal hidden lg:block">
@@ -166,19 +136,23 @@ const ExperienceItem = () => {
           </div>
 
           <div>
-            <p className="py-2">Assist in launching 3 new Shopify stores</p>
-            <p className="py-2">Update 6 existing stores in Shopify</p>
             <p className="py-2">
-              Assist in creating new products and sitemaps for new stores
+              Developed custom Shopify themes using HTML, CSS, and JavaScript to
+              enhance user experience and increase conversions
             </p>
             <p className="py-2">
-              Design Shopify store according to client&apos;s needs
+              Launched 3 new Shopify stores and updated 6 existing ones,
+              utilizing expertise in the Shopify platform to ensure optimal
+              performance and user experience
             </p>
             <p className="py-2">
-              Create store function for clients using jQuery
+              Collaborated with cross-functional teams to deliver high-quality
+              e-commerce solutions that met client requirements
             </p>
             <p className="py-2">
-              Assist in creating CSS templates for the company
+              Provided technical support and troubleshooting for Shopify stores,
+              resolving issues related to theme customization and app
+              integration
             </p>
           </div>
         </div>
@@ -205,16 +179,19 @@ const ExperienceItem = () => {
           </div>
 
           <div>
-            <p className="py-2">
-              Create webpages with HTML and CSS based on client&apos;s needs
-            </p>
+            <p className="py-2">Create webpages with Angular and Bootstrap</p>
             <p className="py-2">
               Check for bugs in the development and production environment
             </p>
             <p className="py-2">
-              Translate website content to other languages with Angular i18n
+              Translate website content to other languages with i18n
             </p>
-            <p className="py-2">Provide ideas in creating UI for application</p>
+            <p className="py-2">
+              Provide ideas for creating UI for the application
+            </p>
+            <p className="py-2">
+              Attend weekly meetings to provide progress reports
+            </p>
             <p className="py-2">
               Assist colleagues in completing tasks and projects
             </p>
